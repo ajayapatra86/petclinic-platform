@@ -1,0 +1,9 @@
+# Copy this file to terraform.tfvars (which is gitignored) and fill in real values.
+# Never commit terraform.tfvars — it may contain sensitive values.
+
+environment         = "dev"
+region              = "eu-central-1"
+availability_zones  = ["eu-central-1a", "eu-central-1b"]
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+openai_api_key      = "sk-..."   # retrieve from AWS Secrets Manager or 1Password
